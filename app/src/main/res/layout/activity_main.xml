@@ -6,29 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/taskName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Task Name:"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <TextView
-        android:id="@+id/taskDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Task Desc:"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/taskName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/toDoListRecyclerView"
+     android:backgroundTint="@color/design_default_color_background"
+     />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/newTaskButton"
@@ -36,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text="New Task"
         android:backgroundTint="?attr/colorPrimary"
-        android:textColor="?attr/colorOnPrimary"
+        android:textColor="?colorOnPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="5dp"
