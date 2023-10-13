@@ -1,7 +1,7 @@
 # ToDoList App
 
 The ToDoList app is a simple Android application for managing and organizing your tasks. 
-It is my second venture into creating android applications, and I followed this tutorial to create it: https://www.youtube.com/watch?v=RfIR4oaSVfQ
+It is my second venture into creating android applications, and I followed [this](https://www.youtube.com/watch?v=RfIR4oaSVfQ) tutorial to create it.
 
 ## Table of Contents
 
